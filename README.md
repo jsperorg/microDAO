@@ -2,15 +2,15 @@
 ### 描述
 `microDAO` 是一个极简的java数据库访问类，适用于小型应用。`microDAO`利用了java中`List`、`map`的特性，通过对查询、更新的封装，使在jsp页面能更加简便的操作数据库。`microDAO`使用预编译上下文对象确保SQL安全，拒绝SQL注入。使用`microDAO`无需创建实体类，`microDAO`更新数据库直接使用sql语句，查询数据返回`List<<Map<key,value>>`的对象。
 
-本类共有7个静态方法，三个受保护的方法：
+本类共有7个静态方法，其中有3个受保护的方法：
 
-> * public 不带参数的更新
-> * public 带参数的更新
-> * public 不带参数的查询
-> * public 带参数的查询
-> * protected 获得数据库连接
-> * protected 关闭执行查询操作连接
-> * protected 关闭执行更新操作连接
+> * static public 不带参数的更新
+> * static public 带参数的更新
+> * static public 不带参数的查询
+> * static public 带参数的查询
+> * static protected 获得数据库连接
+> * static protected 关闭执行查询操作连接
+> * static protected 关闭执行更新操作连接
 
 ### 用法举例
 jsp页面引入此类：
