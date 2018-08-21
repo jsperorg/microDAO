@@ -14,11 +14,11 @@
 
 ### 用法举例
 jsp页面引入此类：
-```
+```jsp
 <%@ page language="java" import="java.util.*,microDAO.DB" pageEncoding="UTF-8"%>
 ```
 jsp页面查询数据：
-```
+```java
 String article_id = request.getParameter("id");
 Map<String, Object> atc = null;
 if(article_id!=null && !"".equals(article_id)){
@@ -37,11 +37,11 @@ if(article_id!=null && !"".equals(article_id)){
 }
 ```
 jsp页面展示数据：
-```
+```jsp
 <div><%=atc.get("article_content")%></div>
 ```
 数据更新：
-```
+```java
 String sql="update table set field1 = ?,field2=? where id=?";
 List<Object> par = new ArrayList<Object>();
 par.add("field1 value");
